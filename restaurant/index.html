@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember &amp; Oak — Wood-Fired Seasonal Kitchen</title>
+  <meta name="description" content="Ember & Oak is a wood-fired seasonal kitchen. Open-flame cooking, local ingredients, and a dining room built around fire.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">Ember <span>&amp;</span> Oak</a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#reservations" class="btn btn-small nav-cta">Book a Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" role="img" aria-label="Moody dining room of Ember and Oak restaurant"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Est. 2016 · Wood-fired seasonal kitchen</p>
+      <h1>Cooked over <em>open flame.</em><br>Served with soul.</h1>
+      <p class="hero-sub">No gas, no shortcuts — just oak, embers, and whatever the season hands us.</p>
+      <div class="hero-ctas">
+        <a href="#reservations" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-ghost">View Menu</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about">↓</a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <p class="eyebrow">Our story</p>
+        <h2>One wood oven.<br>A stubborn belief.</h2>
+        <p>Ember &amp; Oak started in 2016 with a single oak-fired oven and a simple idea: that fire, given time and good ingredients, does most of the talking. Ten years on, the oven is bigger, the dining room is fuller — but the rule hasn't changed. If it can't be cooked over wood, it doesn't go on the menu.</p>
+        <p>We buy from eleven family farms within a hundred miles, butcher in-house, bake our sourdough every morning, and let the seasons write the menu four times a year.</p>
+        <blockquote class="chef-quote">
+          <p>"Gas is convenient. Wood has a memory. Every dish that leaves our pass carries a little of the oak it was born over."</p>
+          <cite>— Mara Ellison, Chef &amp; Founder</cite>
+        </blockquote>
+      </div>
+      <div class="about-image reveal">
+        <img src="images/chef-flame.webp" alt="Chef working over an open flame grill" loading="lazy">
+        <p class="caption">Chef Ellison on the grill, service at 7pm</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Eat &amp; drink</p>
+        <h2>The Menu</h2>
+        <p class="section-sub">Printed daily at 4pm. When the fire decides something's done, it's gone.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Menu categories">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="starters">Starters</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="mains">Mains</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="desserts">Desserts</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-panels reveal">
+        <div class="menu-panel active" id="panel-starters" role="tabpanel">
+          <div class="dish"><div class="dish-head"><h3>Charred Sourdough &amp; Smoked Butter</h3><span class="price">9</span></div><p>Baked at dawn, finished on the grill, butter smoked over oak chips.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Ember-Roasted Beets</h3><span class="price">14</span></div><p>Whipped goat cheese, pistachio, sherry caramel.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Crispy Calamari</h3><span class="price">16</span></div><p>Charred lemon aioli, pickled fresno, herbs.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Roasted Bone Marrow</h3><span class="price">18</span></div><p>Parsley-shallot salad, grilled bread, flaky salt.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Burrata &amp; Fire-Blistered Tomatoes</h3><span class="price">17</span></div><p>Basil oil, aged balsamic, grilled ciabatta.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Smoked Trout Dip</h3><span class="price">13</span></div><p>House-smoked trout, crème fraîche, rye crisps.</p></div>
+        </div>
+
+        <div class="menu-panel" id="panel-mains" role="tabpanel">
+          <div class="dish"><div class="dish-head"><h3>Oak-Fired Ribeye</h3><span class="price">46</span></div><p>28-day aged, bone-marrow butter, watercress. Our signature.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Cedar-Plank Salmon</h3><span class="price">34</span></div><p>Charred fennel, citrus beurre blanc, dill.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Half Chicken al Mattone</h3><span class="price">29</span></div><p>Brick-pressed over embers, rosemary jus, grilled lemon.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Wild Mushroom Risotto</h3><span class="price">26</span></div><p>Carnaroli rice, aged parmesan, white truffle oil.</p></div>
+          <div class="dish"><div class="dish-head"><h3>The Ember Burger</h3><span class="price">21</span></div><p>Dry-aged blend, smoked cheddar, burnt-onion mayo, fries.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Whole Roasted Cauliflower</h3><span class="price">24</span></div><p>Romesco, marcona almond, herb oil. Vegetarian centerpiece.</p></div>
+        </div>
+
+        <div class="menu-panel" id="panel-desserts" role="tabpanel">
+          <div class="dish"><div class="dish-head"><h3>Burnt Basque Cheesecake</h3><span class="price">12</span></div><p>Smoked caramel, maldon salt.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Chocolate Budino</h3><span class="price">11</span></div><p>Dark chocolate custard, olive oil, sea salt.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Wood-Oven Apple Galette</h3><span class="price">13</span></div><p>Brown-butter ice cream, cider caramel.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Affogato</h3><span class="price">9</span></div><p>Double espresso over vanilla-bean gelato.</p></div>
+        </div>
+
+        <div class="menu-panel" id="panel-drinks" role="tabpanel">
+          <div class="dish"><div class="dish-head"><h3>Smoked Old Fashioned</h3><span class="price">15</span></div><p>Bourbon, demerara, oak smoke trapped under glass.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Fig Leaf Martini</h3><span class="price">14</span></div><p>Fig-leaf gin, dry vermouth, orange oils.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Ember Spritz</h3><span class="price">13</span></div><p>Blood orange, prosecco, charred rosemary.</p></div>
+          <div class="dish"><div class="dish-head"><h3>House Red / White</h3><span class="price">12 / 13</span></div><p>Rotating Old World pours, glass.</p></div>
+          <div class="dish"><div class="dish-head"><h3>Local Taps</h3><span class="price">8</span></div><p>Four rotating Pacific Northwest breweries.</p></div>
+        </div>
+      </div>
+
+      <p class="menu-note reveal">A 20% service charge is shared with the whole team, front and back of house. Menus change with the market — ask your server what's new tonight.</p>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Atmosphere</p>
+        <h2>From the Fire</h2>
+      </div>
+    </div>
+    <div class="gallery-strip reveal">
+      <figure><img src="images/hero-interior.webp" alt="Candlelit dining room" loading="lazy"><figcaption>The dining room</figcaption></figure>
+      <figure><img src="images/dish-plated.webp" alt="Ember-seared dish, plated" loading="lazy"><figcaption>Off the pass</figcaption></figure>
+      <figure><img src="images/chef-flame.webp" alt="Chef at the open grill" loading="lazy"><figcaption>The grill station</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="press">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kind words</p>
+        <h2>Press &amp; Praise</h2>
+      </div>
+      <div class="quotes">
+        <blockquote class="reveal">
+          <p>"The ribeye alone is worth the trip. Ember &amp; Oak cooks with a confidence most kitchens only pretend to have."</p>
+          <cite>— The Oregonian</cite>
+        </blockquote>
+        <blockquote class="reveal">
+          <p>"A masterclass in restraint. Fire, seasonality, and not a single wasted ingredient on the plate."</p>
+          <cite>— Eater Portland</cite>
+        </blockquote>
+        <blockquote class="reveal">
+          <p>"Our favorite date-night room in the city. Book the chef's counter if you can get it."</p>
+          <cite>— Portland Monthly</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATIONS ============ -->
+  <section class="reservations" id="reservations">
+    <div class="container res-grid">
+      <div class="res-form-wrap reveal">
+        <p class="eyebrow">Reservations</p>
+        <h2>Book a Table</h2>
+        <p class="section-sub">Tables for 7 or more, and the chef's counter — please call us at <a href="tel:+15035550184">(503) 555-0184</a>.</p>
+        <form id="resForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="resName">Name</label>
+              <input type="text" id="resName" name="name" placeholder="Jane Appleseed" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="resPhone">Phone</label>
+              <input type="tel" id="resPhone" name="phone" placeholder="(503) 555-0000" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="resDate">Date</label>
+              <input type="date" id="resDate" name="date" required>
+            </div>
+            <div class="field">
+              <label for="resTime">Time</label>
+              <select id="resTime" name="time" required>
+                <option value="" disabled selected>Select</option>
+                <option>5:00 PM</option><option>5:30 PM</option>
+                <option>6:00 PM</option><option>6:30 PM</option>
+                <option>7:00 PM</option><option>7:30 PM</option>
+                <option>8:00 PM</option><option>8:30 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="resParty">Party size</label>
+              <select id="resParty" name="party" required>
+                <option value="" disabled selected>Select</option>
+                <option>1 guest</option><option>2 guests</option>
+                <option>3 guests</option><option>4 guests</option>
+                <option>5 guests</option><option>6 guests</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Request Reservation</button>
+          <p class="form-note">No card required. We'll confirm by text within the hour.</p>
+        </form>
+        <div class="res-success" id="resSuccess" hidden>
+          <div class="success-icon">✓</div>
+          <h3>Request received!</h3>
+          <p id="resSuccessText">Thanks! We'll text you shortly to confirm.</p>
+          <button class="btn btn-ghost" id="resAgain">Make another request</button>
+        </div>
+      </div>
+      <aside class="res-info reveal">
+        <h3>Hours &amp; Location</h3>
+        <ul class="hours">
+          <li><span>Tue – Thu</span><span>5pm – 10pm</span></li>
+          <li><span>Fri – Sat</span><span>5pm – 11pm</span></li>
+          <li><span>Sunday</span><span>4pm – 9pm</span></li>
+          <li><span>Monday</span><span>Closed — the kitchen rests</span></li>
+        </ul>
+        <address>
+          2147 NE Alberta Street<br>
+          Portland, OR 97211<br>
+          <a href="tel:+15035550184">(503) 555-0184</a><br>
+          <a href="mailto:hello@emberandoak.example">hello@emberandoak.example</a>
+        </address>
+        <p class="res-tip">Street parking on Alberta; the 72 bus stops two blocks east.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="logo">Ember <span>&amp;</span> Oak</p>
+        <p>Wood-fired seasonal kitchen.<br>Cooked over open flame since 2016.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>2147 NE Alberta Street<br>Portland, OR 97211<br>(503) 555-0184</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Tue–Thu · 5–10pm<br>Fri–Sat · 5–11pm<br>Sun · 4–9pm<br>Mon · Closed</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <p><a href="#top">Instagram</a><br><a href="#top">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ember &amp; Oak. All rights reserved. · <span class="demo-note">Concept demo site — built as a portfolio piece. Not a real restaurant.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
