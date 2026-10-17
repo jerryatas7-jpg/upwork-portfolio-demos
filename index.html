@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XiaoWei Liu — Web Design & Development Samples</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:#0f172a; color:#e2e8f0; min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px; }
+  h1 { font-size:2rem; margin-bottom:8px; text-align:center; }
+  p.sub { color:#94a3b8; margin-bottom:40px; text-align:center; max-width:640px; line-height:1.6; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; max-width:960px; width:100%; }
+  .card { background:#1e293b; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; transition:transform .2s, box-shadow .2s; border:1px solid #334155; }
+  .card:hover { transform:translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.4); }
+  .card .thumb { height:180px; display:flex; align-items:center; justify-content:center; font-size:3rem; }
+  .card.dental .thumb { background:linear-gradient(135deg,#0d9488,#0e7490); }
+  .card.plumbing .thumb { background:linear-gradient(135deg,#1e3a8a,#ea580c); }
+  .card.restaurant .thumb { background:linear-gradient(135deg,#1c1917,#c2410c); }
+  .card .body { padding:20px; }
+  .card h2 { font-size:1.2rem; margin-bottom:8px; }
+  .card p { color:#94a3b8; font-size:.92rem; line-height:1.55; }
+  .card .tag { display:inline-block; margin-top:12px; font-size:.78rem; color:#38bdf8; border:1px solid #38bdf8; border-radius:999px; padding:3px 12px; }
+  footer { margin-top:48px; color:#64748b; font-size:.82rem; text-align:center; }
+</style>
+</head>
+<body>
+  <h1>XiaoWei Liu — Sample Websites</h1>
+  <p class="sub">Concept demo sites designed &amp; built as portfolio samples. Each is a complete, responsive, single-page website with realistic content.</p>
+  <div class="grid">
+    <a class="card dental" href="./dental-clinic/">
+      <div class="thumb">🦷</div>
+      <div class="body">
+        <h2>BrightSmile Dental Clinic</h2>
+        <p>Premium dental clinic site — services, team, patient reviews, online booking form. Clean medical aesthetic, Brisbane AU.</p>
+        <span class="tag">Health / Medical</span>
+      </div>
+    </a>
+    <a class="card plumbing" href="./plumbing/">
+      <div class="thumb">🔧</div>
+      <div class="body">
+        <h2>RapidFlow Plumbing &amp; Heating</h2>
+        <p>Conversion-focused local tradie site — click-to-call header, quote form, reviews, service areas. Auckland NZ.</p>
+        <span class="tag">Local Service Business</span>
+      </div>
+    </a>
+    <a class="card restaurant" href="./restaurant/">
+      <div class="thumb">🔥</div>
+      <div class="body">
+        <h2>Ember &amp; Oak Restaurant</h2>
+        <p>Moody upscale restaurant site — tabbed menu, gallery, reservation form. Warm hospitality design.</p>
+        <span class="tag">Hospitality</span>
+      </div>
+    </a>
+  </div>
+  <footer>Concept demo sites — built as portfolio samples, not real businesses.</footer>
+</body>
+</html>
