@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
 
@@ -332,6 +333,27 @@
     </div>
   </footer>
 
+  <!-- Demo chatbot widget: portfolio sample, answers from the page FAQ, booking simulated -->
+  <button class="bs-chat-btn" id="bsChatBtn" type="button" aria-expanded="false" aria-controls="bsChatPanel">
+    <span class="bs-chat-dot" aria-hidden="true"></span> Chat with us
+  </button>
+  <section class="bs-chat-panel" id="bsChatPanel" hidden aria-label="BrightSmile demo chat">
+    <div class="bs-chat-head">
+      <div>
+        <h3>BrightSmile Assistant</h3>
+        <p>Demo chatbot &middot; replies from clinic FAQ &middot; booking here is simulated, no data is sent</p>
+      </div>
+      <button class="bs-chat-close" id="bsChatClose" type="button" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="bs-chat-body" id="bsChatBody" aria-live="polite"></div>
+    <div class="bs-chips" id="bsChatChips"></div>
+    <form class="bs-chat-form" id="bsChatForm">
+      <input id="bsChatInput" type="text" placeholder="Ask about prices, hours, booking…" autocomplete="off" aria-label="Type your message">
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
   <script src="script.js"></script>
+  <script src="chatbot.js"></script>
 </body>
 </html>
